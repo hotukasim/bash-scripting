@@ -5,15 +5,13 @@ pass=0
 fail=0
 
 read -p "give number" n
-for ((i=0;i<n;i++))
-do
+for ((i = 0; i < n; i++)); do
 	read -p "give array elemens :" k
-	if [  $k -gt 40 ]	
-	then
+	if [ $k -gt 39 ]; then
 		((pass++))
 	else
 		((fail++))
 	fi
 done
-echo "pass sutdne $pass"
-echo "fial studetn $fail"
+echo "pass sutdent $pass"
+echo "fail student $fail"
